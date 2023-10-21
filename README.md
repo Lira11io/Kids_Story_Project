@@ -1,7 +1,7 @@
 # Project Kids Story
 
 <p>Сайт английского детского сада</p>
-<p> Ссылка на сайт https://ianastasiya.github.io/Project_Kids_Story/</p>
+<p> Ссылка на сайт https://lira11io.github.io/Kids_Story_Project/</p>
 
 ___
 ![This is an image](/assets/images/logo.png)
