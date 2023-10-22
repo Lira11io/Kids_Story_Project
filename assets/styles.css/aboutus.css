@@ -171,7 +171,7 @@
   align-items: center;
   text-align: right;
   color: #334155;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 
 /*Кнопка хедера "Записаться на экскурсию"*/
@@ -180,7 +180,7 @@
   border: 1px solid #8081bd;
   border-radius: 20px;
   color: white;
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-family: "Montserrat", sans-serif;
   min-height: 30px;
   cursor: pointer;
@@ -196,7 +196,7 @@
   color: #ea5d4a;
   font-family: Montserrat, sans-serif;
   font-size: 10px;
-  margin-left: 5%;
+  margin-left: 1%;
   margin-top: -4%;
 }
 
@@ -982,11 +982,9 @@ main {
 
   .header-button {
     display: flex;
-    font-size: 0.8vw;
-    font-family: "Montserrat", sans-serif;
-    min-height: 30px;
     align-items: center;
     justify-content: center;
+    font-size: 1vw;
   }
 
   /*Блок о руководителе*/
@@ -996,7 +994,6 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
-    /*grid-template-rows: 10% 90%;*/
     grid-gap: 5px;
     color: #334155;
   }
