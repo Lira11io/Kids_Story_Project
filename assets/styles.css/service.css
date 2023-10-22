@@ -78,7 +78,7 @@ a {
 }
 
 .nav_button {
-  background-image: url(/assets/images/Vector\\(3\).png);
+  background-image: url(/assets/images/Vector3.png);
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -116,10 +116,9 @@ a {
 .header-phonnumber {
   min-width: 55%;
   display: grid;
-  grid-template-columns: minmax(5%, min-content) minmax(65%, min-content) minmax(
-      15%,
-      min-content
-    ) minmax(15%, min-content);
+  grid-template-columns:
+    minmax(5%, min-content) minmax(65%, min-content) minmax(15%, min-content)
+    minmax(15%, min-content);
 }
 .header-button {
   background-color: #8081bd;
