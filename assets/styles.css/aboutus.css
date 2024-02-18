@@ -585,8 +585,14 @@ main {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    margin-top: 5%;
     justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
   }
   .img-logo {
     min-width: 100%;
@@ -606,7 +612,7 @@ main {
     background-color: #ea5d4a;
     min-height: 50px;
     width: 90%;
-    /* margin-top: 5%; */
+    margin-top: 5%;
     margin-bottom: 5%;
   }
   /* .hamburger-button {
@@ -689,7 +695,7 @@ main {
 
   /*скрытое меню*/
   .humburger-nav {
-    margin: 0 0 0 10%;
+    margin: 67% 0 0 0;
     width: 90%;
     height: 100%;
     position: fixed;
@@ -702,7 +708,7 @@ main {
 
   ul {
     padding-left: 0;
-    margin-top: 13%;
+    margin-top: 15%;
   }
   .humburger-menu {
     text-align: right;
@@ -710,7 +716,7 @@ main {
   .humburger-menu a {
     text-decoration: none;
     display: block;
-    padding: 30px;
+    padding: 45px 30px 10px 30px;
     color: white;
   }
   .humburger-menu a:hover {
