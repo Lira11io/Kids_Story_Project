@@ -706,12 +706,10 @@ main {
     transition: max-height 0.5s ease-out;
   }
 
-  ul {
-    padding-left: 0;
-    margin-top: 15%;
-  }
   .humburger-menu {
     text-align: right;
+    padding-left: 0;
+    margin-top: 15%;
   }
   .humburger-menu a {
     text-decoration: none;
@@ -728,6 +726,20 @@ main {
   }
   .humburger-menu li {
     list-style: none;
+  }
+
+  /*Кнопка записаться на экскурсию в выпадающем меню*/
+  .humburger-btn {
+    border: white;
+    border-radius: 25px;
+    font-size: 14px;
+    /* color: white; */
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+    min-height: 40px;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   /*Блок о руководителе*/
