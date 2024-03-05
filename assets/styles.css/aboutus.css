@@ -584,15 +584,16 @@ main {
   .logo-info-mobile {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 5%;
+    /* margin-left: 2%; */
   }
 
   .header-info {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 10%;
   }
   .img-logo {
     min-width: 100%;
@@ -600,8 +601,10 @@ main {
   .socialmedia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 14%;
     align-items: center;
+    justify-items: end;
+    justify-content: space-between;
   }
   .excursion {
     border: #ea5d4a;
@@ -611,7 +614,7 @@ main {
     font-family: Montserrat, sans-serif;
     background-color: #ea5d4a;
     min-height: 50px;
-    width: 90%;
+    /* width: 90%; */
     margin-top: 5%;
     margin-bottom: 5%;
   }
@@ -646,6 +649,8 @@ main {
     float: right;
     padding: 40px 20px;
     z-index: 100;
+    position: fixed;
+    left: 84%;
   }
   .hamb-line {
     display: block;
@@ -695,9 +700,9 @@ main {
 
   /*скрытое меню*/
   .humburger-nav {
-    margin: 67% 0 0 0;
-    width: 90%;
-    height: 100%;
+    margin: 67% 0 0 20%;
+    width: 80%;
+    /* height: 100%; */
     position: fixed;
     z-index: 90;
     background-color: #8081bdcc;
@@ -709,7 +714,7 @@ main {
   .humburger-menu {
     text-align: right;
     padding-left: 0;
-    margin-top: 15%;
+    margin-top: 29%;
   }
   .humburger-menu a {
     text-decoration: none;
@@ -733,7 +738,7 @@ main {
     border: white;
     border-radius: 25px;
     font-size: 14px;
-    /* color: white; */
+    color: #334155;
     font-family: Montserrat, sans-serif;
     background-color: white;
     min-height: 40px;
