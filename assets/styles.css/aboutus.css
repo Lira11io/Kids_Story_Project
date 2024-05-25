@@ -831,25 +831,83 @@ main {
     margin-top: 10px;
   }
 
-  /*Заголовок блока с видео*/
+  /*Блок с видео*/
+  .section-video,
   .section-video__title {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+    /* max-width: 90%; */
+  }
+
+  /*Заголовок блока с видео*/
+  .slider__title {
     padding: 15px;
     margin-bottom: 1px;
     font-size: 24px;
     line-height: 25px;
-  }
-
-  /*Блок с видео*/
-  .section-video {
-    margin: 10px;
-    max-width: 90%;
-    grid-template-columns: 1fr;
-    align-items: center;
+    padding: 15px;
+    color: rgb(82, 82, 219);
   }
 
   /*Видео ролики*/
-  .section-video__video {
-    width: 100%;
+  .slider__nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #333333, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+  }
+
+  .slider__nav:checked {
+    animation: check 0.4s linear forwards;
+  }
+  .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+  }
+  .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+  }
+  .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -200%;
+  }
+
+  .slider__inner {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 400%;
+    height: 100%;
+    transition: left 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .slider__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    /* flex-flow: column nowrap; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider__video {
+    /* width: 100%; */
     max-width: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -1048,7 +1106,11 @@ main {
   .excursion,
   .btn,
   .form_style-mobile,
-  .footer-mobile {
+  .footer-mobile,
+  .slider,
+  .slider__nav,
+  .slider__contents,
+  .slider__video {
     display: none;
   }
 }
@@ -1059,7 +1121,11 @@ main {
   .excursion,
   .btn,
   .form_style-mobile,
-  .footer-mobile {
+  .footer-mobile,
+  .slider,
+  .slider__nav,
+  .slider__contents,
+  .slider__video {
     display: none;
   }
 
